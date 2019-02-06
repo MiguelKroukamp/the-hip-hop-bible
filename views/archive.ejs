@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Archive</title>
+    </head>
+
+    <body>
+
+
+
+        <div class="row">
+
+            <% if (posts) { %>
+            <% posts.forEach(function(post) { %>
+            <div class="panel-body archive">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <strong>
+                                <h1 class="titel">
+                                    <%= post.title %>
+                                </h1>
+                            </strong>
+                            <p>
+                                <%- post.content %>
+                            </p>
+                            <strong>
+                                <p>
+                                    <%= post.date %>
+                                </p>
+                            </strong>
+                            <p><strong>Author:
+                                    <%= post.author %></strong></p>
+                            <a class="btn btn-primary btn-lg" href="/post/<%= post.id %>" role="button">Read more</a>
+                            <a class="btn btn-primary btn-lg" href="/delete/<%= post.id%>" role="button">Delete</a>
+                            <a class="btn btn-primary btn-lg" href="/edit/<%= post.id %>" role="button">Edit</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <img src="<%=post.image %>" alt="" width="60%" height="60%">
+
+                </div>
+
+            </div>
+
+
+
+
+            <% }); %>
+
+            <% } else { %>
+
+            <p> you have no posts </p>
+
+
+            <% } %>
+
+
+
+
+        </div>
+
+
+        </div>
+
+        <footer class="page-footer font-small blue">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/bootstrap-tutorial/">JLC</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+
+    </body>
+
+</html>

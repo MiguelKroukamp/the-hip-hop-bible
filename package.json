@@ -1,0 +1,39 @@
+{
+  "name": "the-hip-hop-bible",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jquery": "^3.3.1",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.9",
+    "popper.js": "^1.14.7",
+    "request": "^2.88.0"
+  },
+  "description": "In this project I will be speaking about the urban hip hop culture, it's influences and various elements of hip hop eg. artist, music more...",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelKroukamp/the-hip-hop-bible.git"
+  },
+  "keywords": [
+    "blog",
+    "hip",
+    "hop",
+    "culture"
+  ],
+  "author": "Miguel Kroukamp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelKroukamp/the-hip-hop-bible/issues"
+  },
+  "homepage": "https://github.com/MiguelKroukamp/the-hip-hop-bible#readme"
+}
