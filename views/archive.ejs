@@ -1,81 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hero App</title>
 
-    <head>
-        <title>Archive</title>
-    </head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <body>
+    <style>
+        body { padding-top:15px; background-image: url("https://stmed.net/sites/default/files/rap-wallpapers-30529-5399299.jpg"); background-repeat: no-repeat; background-size: cover}
+        img { width: 100%;}
+    </style>
+</head>
+<body>
 
+    <nav style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em;">
+            <a class="navbar-brand" href="#">
+                <img src="/img/LogoMakr_6JLXvu.png" width="30" height="30" alt="">
+            </a>
+        <ul class="nav nav-tabs">
+            <li>
+                <a href="/">HOME</a>
+            </li>
+            <li>
+                <a href="/create">CREATE</a>
+            </li>
+            <li>
+                    <a href="/archive">ARCHIVE</a>
+            </li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <!-- <% if (title) { %>
+            <h2><%= title %></h2>
+        <% } %> -->
+        <div class="panel panel-danger">
+            <div class="panel panel-heading text-center">
+                <h1>It's Hero Time.</h1>
+            </div>
+            <div class="panel-body" id="all">
 
-        <div class="row">
-
-            <% if (posts) { %>
-            <% posts.forEach(function(post) { %>
-            <div class="panel-body archive">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <strong>
-                                <h1 class="titel">
-                                    <%= post.title %>
-                                </h1>
-                            </strong>
-                            <p>
-                                <%- post.content %>
-                            </p>
-                            <strong>
-                                <p>
-                                    <%= post.date %>
-                                </p>
-                            </strong>
-                            <p><strong>Author:
-                                    <%= post.author %></strong></p>
-                            <a class="btn btn-primary btn-lg" href="/post/<%= post.id %>" role="button">Read more</a>
-                            <a class="btn btn-primary btn-lg" href="/delete/<%= post.id%>" role="button">Delete</a>
-                            <a class="btn btn-primary btn-lg" href="/edit/<%= post.id %>" role="button">Edit</a>
-                        </div>
+                <% if (message) { %>
+                    <div class="alert alert-success" role="alert">
+                        <%= message %>
                     </div>
+                <% } %> 
 
-                </div>
-                <div class="col-lg-6">
-                    <img src="<%=post.image %>" alt="" width="60%" height="60%">
+                <a href="/create">
+                    <div class="col-xs-6 col-md-2">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <img src="https://png.icons8.com/ios/1600/add.png">
+                            </div>
+                            <div class="panel-footer">
+                                New pokemon
+                            </div>
+                        </div>
+                    </div> 
+                </a>
 
-                </div>
+                <% pokemon.pokemon.forEach(function(poke){ %>
+                    <a href="/view/<%-poke.id %>">
+                        <div class="col-xs-6 col-md-2">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <img src="<%-poke.image %>">
+                                </div>
+                                <div class="panel-footer">
+                                    <%-poke.name %>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>
+                <% }); %>   
 
             </div>
-
-
-
-
-            <% }); %>
-
-            <% } else { %>
-
-            <p> you have no posts </p>
-
-
-            <% } %>
-
-
-
-
-        </div>
-
-
-        </div>
-
-        <footer class="page-footer font-small blue">
-
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/bootstrap-tutorial/">JLC</a>
+            <div class="panel-footer text-center">
+                <p>All rights reserved 2018 | Nate.</p>
             </div>
-            <!-- Copyright -->
+        </div>
+    </div>
 
-        </footer>
-
-    </body>
-
+</body>
 </html>
