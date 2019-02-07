@@ -6,6 +6,14 @@
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- include libraries(jQuery, bootstrap) -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+    
+        <!-- include summernote css/js -->
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
 
     <style>
         body { padding-top:15px; background-image: url("https://stmed.net/sites/default/files/rap-wallpapers-30529-5399299.jpg"); background-repeat: no-repeat; background-size: cover}
@@ -53,15 +61,39 @@
                         <input type="text" class="form-control" id="exampleInputURL" placeholder="Link to hero image" name="image_url">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                        <button type="submit" class="btn btn-success btn-block">Add Hero</button>
+                        <!-- <button type="submit" class="btn btn-success btn-block">Add Hero</button> -->
                     </div>
 
-                </form>
-
+                
+                    
             </div>
             <div class="panel-footer text-center">
-                <p>All rights reserved 2018 | Nate.</p>
+
+                <div class="click2edit" id="summernote"></div>
+
+                    <!-- <button id="save" class="btn btn-primary" onclick="save()" type="button">Save 2</button> -->
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                        <button id="edit" class="btn btn-primary" onclick="edit()" type="button">EDIT</button>
+                        <button type="submit" class="btn btn-success">SAVE</button>
+                </div>
+            </form>
+                <script>
+                  $(document).ready(function() {
+                      $('#summernote').summernote();
+                  });
+                  var edit = function() {
+                        $('.click2edit').summernote({focus: true});
+                        };
+
+                        var save = function() {
+                        var markup = $('.click2edit').summernote('code');
+                        $('.click2edit').summernote('destroy');
+                    };
+                </script>
+                                <p>All rights reserved 2018 | Nate.</p>
             </div>
+
+            
         </div>
     </div>
 

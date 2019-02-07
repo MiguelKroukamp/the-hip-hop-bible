@@ -6,23 +6,13 @@
       "image": "http://pngimg.com/uploads/pokemon/pokemon_PNG154.png"
     },
     {
-      "id": 2,
-      "name": "pikachu",
-      "image": "https://vignette.wikia.nocookie.net/pokemon/images/d/d0/Ash_Pikachu_Anime.png/revision/latest?cb=20110526013016"
-    },
-    {
       "id": 3,
       "name": "eevee",
       "image": "https://webiconspng.com/wp-content/uploads/2017/09/Pokemon-PNG-Image-97643.png"
     },
     {
-      "id": 4,
-      "name": "bulbasaur",
-      "image": "http://pngimg.com/uploads/pokemon/pokemon_PNG149.png"
-    },
-    {
       "id": 5,
-      "name": "togepi",
+      "name": "moos",
       "image": "https://banner2.kisspng.com/20180710/wk/kisspng-misty-pokmon-battle-revolution-pokmon-tcg-onli-pokemon-character-plush-5b4466cc7d7ec7.946681261531209420514.jpg"
     },
     {
@@ -49,16 +39,6 @@
       "id": 10,
       "name": "psyduck",
       "image": "https://vignette.wikia.nocookie.net/sonicpokemon/images/b/b2/Psyduck_AG_anime.png/revision/latest?cb=20130626041931"
-    },
-    {
-      "name": "",
-      "image": "",
-      "id": 11
-    },
-    {
-      "name": "",
-      "image": "",
-      "id": 12
     }
   ]
 }
