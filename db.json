@@ -1,44 +1,29 @@
 {
   "pokemon": [
     {
-      "id": 1,
-      "name": "charmander",
-      "image": "http://pngimg.com/uploads/pokemon/pokemon_PNG154.png"
-    },
-    {
-      "id": 3,
-      "name": "eevee",
-      "image": "https://webiconspng.com/wp-content/uploads/2017/09/Pokemon-PNG-Image-97643.png"
-    },
-    {
       "id": 5,
-      "name": "moos",
-      "image": "https://banner2.kisspng.com/20180710/wk/kisspng-misty-pokmon-battle-revolution-pokmon-tcg-onli-pokemon-character-plush-5b4466cc7d7ec7.946681261531209420514.jpg"
-    },
-    {
-      "id": 6,
-      "name": "mew",
-      "image": "http://images6.fanpop.com/image/photos/36600000/Legendary-Pokemon-image-legendary-pokemon-36640052-732-744.png"
-    },
-    {
-      "id": 7,
-      "name": "jigglypuff",
-      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full//039.png"
+      "name": "P Diddy",
+      "image": "https://frostsnow.com/uploads/biography/2017/05/17/p-diddy.jpg"
     },
     {
       "id": 8,
-      "name": "totodile",
-      "image": "https://vignette.wikia.nocookie.net/pokemon/images/c/ca/158Totodile_Pokemon_Mystery_Dungeon_Red_and_Blue_Rescue_Teams.png/revision/latest?cb=20150107222838"
+      "name": "Dr Dre",
+      "image": "https://music-b26f.kxcdn.com/wp-content/uploads/2015/08/dr-dre-banner-600x600.jpg"
     },
     {
       "id": 9,
-      "name": "chickorita",
-      "image": "https://data.whicdn.com/images/20680786/large.png"
+      "name": "Birdman",
+      "image": "https://pixel.nymag.com/imgs/daily/vulture/2015/07/24/24-birdman-rapper.w330.h330.jpg"
     },
     {
       "id": 10,
-      "name": "psyduck",
-      "image": "https://vignette.wikia.nocookie.net/sonicpokemon/images/b/b2/Psyduck_AG_anime.png/revision/latest?cb=20130626041931"
+      "name": "Snoop Dogg",
+      "image": "https://pbs.twimg.com/profile_images/943933166015803392/jvjasD7v_400x400.jpg"
+    },
+    {
+      "name": "Kanye West",
+      "image": "https://s3.amazonaws.com/hwingcdn/wp-content/uploads/2017/06/04205843/rs_600x600-170211120220-600.kanye-west.cm_.21117.jpg",
+      "id": 13
     }
   ]
 }
