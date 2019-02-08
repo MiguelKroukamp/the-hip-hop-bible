@@ -22,10 +22,8 @@
 </head>
 <body>
 
-    <nav style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em;">
-            <a class="navbar-brand" href="#">
-                <img src="/img/LogoMakr_6JLXvu.png" width="30" height="30" alt="">
-            </a>
+    <nav style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em; position: sticky; top: 0; z-index: 1;">
+            <a href="" class="navbar-left"><img src="/images/LogoMakr_6JLXvu.png" alt=""></a>
         <ul class="nav nav-tabs">
             <!-- <li>
                 <a href="/">HOME</a>
@@ -45,7 +43,7 @@
     <div class="container">
         <div class="panel panel-danger" style="background-color: black;">
             <div class="panel panel-heading text-center" style="background-color: black; color: yellow;">
-                <h1>It's Add A New Hero Time.</h1>
+                <h1>SHOW ME WHAT YOU KNOW</h1>
             </div>
             <div class="panel-body" id="all">
 
@@ -58,13 +56,17 @@
                 <form method="POST" action="">
 
                     <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
-                        <label for="exampleInputName">Hero Name</label>
-                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="heroName" placeholder="Enter Hero Name" name="name">
+                        <label for="exampleInputName">Artist Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="heroName" placeholder="Enter Artist Name" name="name">
                         <!-- <small id=heroName" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
                         <label for="exampleInputURL">Image URL</label>
-                        <input type="text" class="form-control" id="exampleInputURL" placeholder="Link to hero image" name="image_url">
+                        <input type="text" class="form-control" id="exampleInputURL" placeholder="Link to Artist image" name="image_url">
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
+                            <label for="exampleInputURL">Add content</label>
+                            <input type="text" class="form-control" id="exampleInputContent" placeholder="Add content" name="content">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                         <!-- <button type="submit" class="btn btn-success btn-block">Add Hero</button> -->

@@ -28,6 +28,7 @@ router.post('/:pokeId', function(req, res, next) {
     form: {
         name: req.body.name,
         image: req.body.image_url,
+        content: req.body.content,
     }
     }, function(error, response, body) {
         // console.log(body);

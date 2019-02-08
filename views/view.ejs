@@ -14,7 +14,7 @@
 </head>
 <body>
 
-        <nav style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em;">
+        <nav style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em; position: sticky; top: 0; z-index: 1;">
                 <a class="navbar-brand" href="#">
                     <img src="/img/LogoMakr_6JLXvu.png" width="30" height="30" alt="">
                 </a>
@@ -42,8 +42,11 @@
             <div class="panel-body" id="all">
 
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                         <img src="<%= poke.image %>">
+                        <div style="color: white;">
+                            <%-poke.content %>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-sm-offset-4">
                         <br>

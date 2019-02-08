@@ -17,6 +17,7 @@ router.get('/:pokeId', function(req, res, next) {
         let data = {
             title: 'All Pokemon',
             pokemon: Pokemon, 
+            content: req.body.content,
             message: 'Successfully Removed.',
         }
 

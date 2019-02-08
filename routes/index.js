@@ -14,6 +14,7 @@ router.get('/archive', function (req, res, next) {
     let data = {
         title: 'All Pokemon',
         pokemon: Pokemon, 
+        content: req.body.content,
         message: false,
     }
 
