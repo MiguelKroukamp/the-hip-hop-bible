@@ -8,7 +8,7 @@ router.get('/:pokeId', function(req, res, next) {
 
     //make a post request to our database
     request({
-    uri: "http://localhost:8000/pokemon/" + req.params.pokeId,
+    uri: "http://localhost:8080/pokemon/" + req.params.pokeId,
     method: "GET",
     }, function(error, response, body) {
         console.log(JSON.parse(body));
@@ -23,7 +23,7 @@ router.post('/:pokeId', function(req, res, next) {
     // console.log(req.body)
     //make a post request to our database
     request({
-    uri: "http://localhost:8000/pokemon/"+ req.params.pokeId,
+    uri: "http://localhost:8080/pokemon/"+ req.params.pokeId,
     method: "PATCH",
     form: {
         name: req.body.name,
