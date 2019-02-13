@@ -16,7 +16,7 @@
         <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
 
     <style>
-        body { padding-top:15px; background-image: url("https://stmed.net/sites/default/files/rap-wallpapers-30529-5399299.jpg"); background-repeat: no-repeat; background-size: cover; font-family: 'Kelly Slab', cursive;}
+        body { padding-top:15px; background-color: black; font-family: 'Kelly Slab', cursive;}
         img { width: 100%;}
     </style>
 </head>
@@ -32,10 +32,10 @@
                 <a href="/create">CREATE</a>
             </li>
             <li>
-                    <a href="/archive">ARCHIVE</a>
+                    <a href="/">ARCHIVE</a>
             </li>
             <!-- <li>
-                    <a href="/users">USERS</a>
+                    <a href="/">USERS</a>
             </li> -->
         </ul>
     </nav>
@@ -56,17 +56,21 @@
                 <form method="POST" action="">
 
                     <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
-                        <label for="exampleInputName">Artist Name</label>
+                        <label for="exampleInputName" style="color: yellow;">Artist Name</label>
                         <input type="text" class="form-control" id="exampleInputName" aria-describedby="heroName" placeholder="Enter Artist Name" name="name">
                         <!-- <small id=heroName" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
-                        <label for="exampleInputURL">Image URL</label>
+                        <label for="exampleInputURL" style="color: yellow;">Image URL</label>
                         <input type="text" class="form-control" id="exampleInputURL" placeholder="Link to Artist image" name="image_url">
                     </div>
                     <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
-                            <label for="exampleInputURL">Add content</label>
+                            <label for="exampleInputURL" style="color: yellow;">Add Content</label>
                             <input type="text" class="form-control" id="exampleInputContent" placeholder="Add content" name="content">
+                    </div>
+                    <div class="form-group col-xs-12 col-sm-6 col-sm-offset-3">
+                            <label for="exampleInputURL" style="color: yellow;">Add Author</label>
+                            <input type="text" class="form-control" id="exampleInputAuthor" placeholder="Add content" name="author">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                         <!-- <button type="submit" class="btn btn-success btn-block">Add Hero</button> -->
@@ -97,7 +101,7 @@
                         $('.click2edit').summernote('destroy');
                     };
                 </script>
-                                <p>All rights reserved 2018 | Nate.</p>
+                                <p style="text-align: center; color: yellow;">All rights reserved 2019 | Miguel.</p>
             </div>
 
             

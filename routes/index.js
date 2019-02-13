@@ -9,12 +9,13 @@ var Pokemon = require('../db.json');
 
 // });
 
-router.get('/archive', function (req, res, next) {
+router.get('/', function (req, res, next) {
 
     let data = {
         title: 'All Pokemon',
         pokemon: Pokemon, 
         content: req.body.content,
+        author: req.body.author,
         message: false,
     }
 

@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 //Login Page - GET REQUEST
-router.get('/',(req,res)=> {
+router.get('/register',(req,res)=> {
    res.send('');
 })
 
