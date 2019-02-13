@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hero App | New</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hero App | New</title>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
-    <style>
-        body { padding-top:15px; background-color: black; font-family: 'Kelly Slab', cursive;}
-        img { width: 100%;}
-    </style>
-</head>
-<body>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
+        <style>
+            body { padding-top:15px; background-color: black; font-family: 'Kelly Slab', cursive;}
+            img { width: 100%;}
+        </style>
+    </head>
+        <body>
 
-        <nav style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em; position: sticky; top: 0; z-index: 1;">
-                <a class="navbar-brand" href="#">
-                    <img src="/img/LogoMakr_6JLXvu.png" width="30" height="30" alt="">
-                </a>
-            <ul class="nav nav-tabs">
-                <!-- <li>
-                    <a href="/">HOME</a>
-                </li> -->
-                <li>
-                    <a href="/create">CREATE</a>
-                </li>
-                <li>
-                        <a href="/">ARCHIVE</a>
-                </li>
-                <!-- <li>
-                        <a href="/users">USERS</a>
-                </li> -->
-            </ul>
-        </nav>
-
-    <div class="container">
-        <div class="panel panel-danger" style="background-color: black">
-            <div class="panel panel-heading text-center" style="background-color: black; color: yellow">
-                <h1 class="text-center"><%= poke.name %></h1>
-            </div>
-            <div class="panel-body" id="all">
-
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                        <img src="<%= poke.image %>">
-                        <div style="color: white;">
-                            <%-poke.content %>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em; position: sticky; top: 0; z-index: 1;">
+                        <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                                <ul class="nav nav-tabs">
+                                    <li>
+                                        <a href="/">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a href="/create">CREATE</a>
+                                    </li>
+                                </ul>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
-                        <br>
-                        <a href="/update/<%= poke.id %>" class="btn btn-block btn-primary" style="background-color: black; color: yellow">Update</a>
-                        <br>
-                        <a href="/delete/<%= poke.id %>" class="btn btn-block btn-danger" style="background-color: black; color: yellow">Delete</a>
-                    </div>
-                </div>  
+                        </div>
+                </nav>
 
-            </div>
-            <div class="panel-footer text-center">
-                <p>All rights reserved 2019 | Miguel.</p>
-            </div>
-        </div>
-    </div>
+            <div class="container">
+                <div class="panel panel-danger" style="background-color: black">
+                    <div class="panel panel-heading text-center" style="background-color: black; color: yellow">
+                        <h1 class="text-center"><%= poke.name %></h1>
+                    </div>
+                    <div class="panel-body" id="all">
 
-</body>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                                <img src="<%= poke.image %>">
+                                <div style="color: white;">
+                                    <%-poke.content %>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                                <br>
+                                <a href="/update/<%= poke.id %>" class="btn btn-block btn-primary" style="background-color: black; color: yellow">Update</a>
+                                <br>
+                                <a href="/delete/<%= poke.id %>" class="btn btn-block btn-danger" style="background-color: black; color: yellow">Delete</a>
+                            </div>
+                        </div>  
+
+                    </div>
+                    <div class="panel-footer text-center">
+                        <p>All rights reserved 2019 | Miguel.</p>
+                    </div>
+                </div>
+            </div>
+
+        </body>
 </html>

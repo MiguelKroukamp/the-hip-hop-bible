@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <title>Hero App</title>
@@ -20,83 +20,106 @@
         img { width: 100%;}
     </style>
 </head>
-<body>
+    <body>
 
-    <nav style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em; position: sticky; top: 0; z-index: 1;">
-        <ul class="nav nav-tabs">
-            <!-- <li>
-                <a href="/">HOME</a>
-            </li> -->
-            <li>
-                <a href="/create">CREATE</a>
-            </li>
-            <li>
-                    <a href="/">ARCHIVE</a>
-            </li>
-            <!-- <li>
-                    <a href="/users">USERS</a>
-            </li> -->
-            <!-- <button><a href="/users">SIGN UP</a></button> -->
-        </ul>
-    </nav>
-
-    <div class="container" >
-        <!-- <% if (title) { %>
-            <h2><%= title %></h2>
-        <% } %> -->
-        <div class="panel panel-danger" style="background-color: black;">
-            <div class="panel panel-heading text-center" style="background-color: black; color: yellow;">
-                <h1>THIS IS HIP HOP</h1>
-            </div>
-            <div class="panel-body" id="all">
-
-                <% if (message) { %>
-                    <div class="alert alert-success" role="alert">
-                        <%= message %>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em; position: sticky; top: 0; z-index: 1;">
+                <div class="container">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="nav nav-tabs">
+                            <li>
+                                <a href="/">HOME</a>
+                            </li>
+                            <li>
+                                <a href="/create">CREATE</a>
+                            </li>
+                            <li>
+                                <a href="#archive">ARCHIVE</a>
+                            </li>
+                        </ul>
+                </div>
+                </div>
+        </nav>
+            
+            <!-- Page Content -->
+            <div class="container">
+            
+                <div class="row">
+            
+                <!-- Blog Entries Column -->
+                <div class="col-md-12">
+            
+                    <h1 class="my-4" style="color:yellow;">INTRODUCTION
+                    <small style="color: white;">THE HIP HOP BIBLE</small>
+                    </h1>
+            
+                    <!-- Blog Post -->
+                    <div class="card mb-4" style="height: 90%;">
+                    <img class="card-img-top" src="https://stmed.net/sites/default/files/rap-wallpapers-30529-5399299.jpg" alt="Card image cap">
+                    <div class="card-body" style="color: white;">
+                        <h2 class="card-title">Hip hop music</h2>
+                        <p class="card-text">Hip hop music, also called hip-hop or rap music, is a music genre developed in the United States by inner-city African Americans in the late 1970s which consists of a stylized rhythmic music that commonly accompanies rapping, a rhythmic and rhyming speech that is chanted.[4] It developed as part of hip hop culture, a subculture defined by four key stylistic elements: MCing/rapping, DJing/scratching with turntables, break dancing, and graffiti writing. Other elements include sampling beats or bass lines from records (or synthesized beats and sounds), and rhythmic beatboxing. While often used to refer solely to rapping, "hip hop" more properly denotes the practice of the entire subculture. The term hip hop music is sometimes used synonymously with the term rap music, though rapping is not a required component of hip hop music; the genre may also incorporate other elements of hip hop culture, including DJing, turntablism, scratching, beatboxing, and instrumental tracks</p>
                     </div>
-                <% } %> 
+                </div>
 
-                <% pokemon.pokemon.forEach(function(poke){ %>
-                    <a href="/view/<%-poke.id %>">
+                <br>
+
+        <div class="container" id="archive">
+            <!-- <% if (title) { %>
+                <h2><%= title %></h2>
+            <% } %> -->
+            <div class="panel panel-danger" style="background-color: black;">
+                <div class="panel panel-heading text-center" style="background-color: black; color: yellow;">
+                    <h1>THIS IS HIP HOP</h1>
+                </div>
+                <div class="panel-body" id="all">
+
+                    <% if (message) { %>
+                        <div class="alert alert-success" role="alert">
+                            <%= message %>
+                        </div>
+                    <% } %> 
+
+                    <% pokemon.pokemon.forEach(function(poke){ %>
+                        <a href="/view/<%-poke.id %>">
+                            <div class="col-xs-6 col-md-2 col-sm-offset-2" style="height: 300px; width: 300px;">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <img src="<%-poke.image %>">
+                                        <div style="display: none;">
+                                            <p><%-poke.content %></p>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <%-poke.name %>
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
+                    <% }); %>
+                    
+                    <a href="/create">
                         <div class="col-xs-6 col-md-2 col-sm-offset-2" style="height: 300px; width: 300px;">
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <img src="<%-poke.image %>">
-                                    <div style="display: none;">
-                                        <p><%-poke.content %></p>
-                                    </div>
+                                    <img src="https://png.icons8.com/ios/1600/add.png">
                                 </div>
                                 <div class="panel-footer">
-                                    <%-poke.name %>
+                                    ADD NEW ARTIST
                                 </div>
                             </div>
                         </div> 
                     </a>
-                <% }); %>
+
+                </div>
+
+
                 
-                <a href="/create">
-                    <div class="col-xs-6 col-md-2 col-sm-offset-2" style="height: 300px; width: 300px;">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <img src="https://png.icons8.com/ios/1600/add.png">
-                            </div>
-                            <div class="panel-footer">
-                                ADD NEW ARTIST
-                            </div>
-                        </div>
-                    </div> 
-                </a>
 
-            </div>
-
-
-            
-
-            <div class="panel-footer text-center">
-                <p>All rights reserved 2019 | Miguel.</p>
+                <div class="panel-footer text-center">
+                    <p>All rights reserved 2019 | Miguel.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-</body>
+    </body>
 </html>
