@@ -14,7 +14,7 @@
     </head>
         <body>
 
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 1.5em; position: sticky; top: 0; z-index: 1;">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: yellow; display: flex; justify-content: center; padding: 1em; font-size: 2em; position: sticky; top: 0; z-index: 1;">
                         <div class="container">
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                                 <ul class="nav nav-tabs">
@@ -39,10 +39,19 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                                 <img src="<%= poke.image %>">
-                                <div style="color: white;">
+                                <br>
+                                <br>
+                                <br>
+                                <div style="color: white; font-size: 1.5em;">
                                     <%-poke.content %>
                                 </div>
+                                <br>
+                                <br>
+                                <div style="color: yellow; text-align: right; font-size: 1.5em;">
+                                    <%-poke.author %>
+                                </div>
                             </div>
+                            <br>
                             <div class="col-xs-12 col-sm-4 col-sm-offset-4">
                                 <br>
                                 <a href="/update/<%= poke.id %>" class="btn btn-block btn-primary" style="background-color: black; color: yellow">Update</a>

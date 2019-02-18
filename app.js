@@ -10,7 +10,7 @@ var createRouter = require('./routes/create');
 var viewRouter = require('./routes/view');
 var updateRouter = require('./routes/update');
 var deleteRouter = require('./routes/delete');
-var usersRouter = require('./routes/users');
+// var registerRouter = require('./routes/register');
 // var archiveRouter = require('.routes/archive');
 
 // view engine setup
@@ -34,7 +34,7 @@ app.use('/create', createRouter);
 app.use('/view', viewRouter);
 app.use('/update', updateRouter);
 app.use('/delete', deleteRouter);
-app.use('/users', usersRouter);
+// app.use('/register', registerRouter);
 // app.use('/archive', archiveRouter);
   
 //app listen on this port
