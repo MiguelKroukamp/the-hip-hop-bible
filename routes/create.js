@@ -18,7 +18,7 @@ router.post('/', function(req, res, next) {
 
     //make a post request to our database
     request({
-    uri: "http://localhost:8000/pokemon",
+    uri: "http://localhost:8080/pokemon",
     method: "POST",
     form: {
         id: id,
