@@ -8,7 +8,7 @@ router.get('/:pokeId', function(req, res, next) {
     console.log(req.params.pokeId)
   //make a post request to our database
   request({
-    uri: "http://localhost:8080/pokemon/"  + req.params.pokeId,
+    uri: "http://localhost:8000/pokemon/"  + req.params.pokeId,
     method: "DELETE",
     }, function(error, response, body) {
         // console.log(body);
